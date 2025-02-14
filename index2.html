@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Decorations with Flowers</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Floating Butterflies -->
+    <div class="butterfly" style="left: 0%; animation-delay: 0s;"></div>
+    <div class="butterfly0" style="left: 6%; animation-delay: 1s;"></div>
+    <div class="butterfly1" style="left: 12%; animation-delay: 2s;"></div>
+    <div class="butterfly2" style="left: 18%; animation-delay: 4s;"></div>
+    <div class="butterfly3" style="left: 24%; animation-delay: 6s;"></div>
+    <div class="butterfly4" style="left: 30%; animation-delay: 8s;"></div>
+    <div class="butterfly5" style="left: 36%; animation-delay: 3s;"></div>
+    <div class="butterfly6" style="left: 42%; animation-delay: 5s;"></div>
+    <div class="butterfly7" style="left: 48%; animation-delay: 0s;"></div>
+    <div class="butterfly8" style="left: 54%; animation-delay: 2s;"></div>
+    <div class="butterfly9" style="left: 60%; animation-delay: 4s;"></div>
+    <div class="butterfly10" style="left: 66%; animation-delay: 6s;"></div>
+    <div class="butterfly11" style="left: 72%; animation-delay: 2s;"></div>
+    <div class="butterfly12" style="left: 78%; animation-delay: 3s;"></div>
+    <div class="butterfly13" style="left: 84%; animation-delay: 5s;"></div>
+    <div class="butterfly14" style="left: 90%; animation-delay: 7s;"></div>
+   
+  
+  
+
+  <!-- Enhanced Message Box -->
+  <div class="message-box">
+    <h2>it look like today is a special day!</h2>
+    <p>Oh No its 3rd of March! Ayushis Birthday</p>
+    <button onclick="startBirthdayDecorations()">Celebrate Now</button>
+  </div>
+
+  <!-- Birthday Decorations Container -->
+  <div class="birthday-decorations">
+    <h1>Happy Birthday Ayushi! </h1>
+    <img src="a.jpg.heic" alt="Birthday Celebration Photo">
+    <button onclick="showNextScreen()">Lets cut the cake</button>
+  </div>
+
+  <!-- New Screen Container -->
+  <div class="next-screen" id="nextScreen">
+    <img src="cake (3).jpg" alt="">
+    <button onclick="showNextContainer()">Best Wishes From</button>
+  </div>
+  
+  <!-- New Container/Screen -->
+  <div class="new-screen" id="newScreen" style="display: none;">
+    <div class="image-container">
+      <img src="a1 (1).webp" alt="">
+      <img src="a2 (1).webp" alt="">
+      <img src="m3 (1) (1).webp" alt="">
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+  
+  <div class="next-container" id="nextContainer" style="display: none;">
+    <div class="message-box last-message-box">
+      <h1> 𝑯𝒆𝒚 𝒉𝒂𝒑𝒑𝒚 𝒃𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝑨𝒚𝒖𝒔𝒉𝒊 . 𝑻𝒉𝒆 𝒎𝒐𝒔𝒕 𝒂𝒎𝒂𝒛𝒊𝒏𝒈 𝒂𝒏𝒅 𝒑𝒆𝒓𝒇𝒆𝒄𝒕 𝒈𝒊𝒓𝒍 𝒊 𝒉𝒂𝒗𝒆 𝒆𝒗𝒆𝒓 𝒔𝒆𝒆𝒏 𝒊𝒏 𝒎𝒚 𝒍𝒊𝒇𝒆.
+        𝑭𝒓𝒐𝒎 𝒕𝒉𝒆 𝒅𝒂𝒚 𝒘𝒆 𝒃𝒆𝒄𝒂𝒎𝒆 𝒇𝒓𝒊𝒆𝒏𝒅𝒔, 𝒍𝒊𝒇𝒆 𝒉𝒂𝒔 𝒃𝒆𝒆𝒏 𝒂 𝒍𝒊𝒕𝒕𝒍𝒆 𝒃𝒓𝒊𝒈𝒉𝒕𝒆𝒓 𝒂𝒏𝒅 𝒂 𝒍𝒐𝒕 𝒎𝒐𝒓𝒆 𝒇𝒖𝒏.
+        𝒀𝒐𝒖 𝒉𝒂𝒗𝒆 𝒕𝒉𝒊𝒔 𝒊𝒏𝒄𝒓𝒆𝒅𝒊𝒃𝒍𝒆 𝒘𝒂𝒚 𝒐𝒇 𝒎𝒂𝒌𝒊𝒏𝒈 𝒕𝒉𝒆 𝒘𝒐𝒓𝒍𝒅 𝒂𝒓𝒐𝒖𝒏𝒅 𝒚𝒐𝒖 𝒎𝒐𝒓𝒆 𝒃𝒆𝒂𝒖𝒕𝒊𝒇𝒖𝒍, 𝒋𝒖𝒔𝒕 𝒃𝒚 𝒃𝒆𝒊𝒏𝒈 𝒊𝒏 𝒊𝒕.
+        
+        
+        𝑶𝒏 𝒚𝒐𝒖𝒓 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 𝒅𝒂𝒚, 𝑰 𝒉𝒐𝒑𝒆 𝒚𝒐𝒖'𝒓𝒆 𝒔𝒖𝒓𝒓𝒐𝒖𝒏𝒅𝒆𝒅 𝒃𝒚 𝒍𝒐𝒗𝒆, 𝒍𝒂𝒖𝒈𝒉𝒕𝒆𝒓, 𝒂𝒏𝒅 𝒂𝒍𝒍 𝒕𝒉𝒆 𝒉𝒂𝒑𝒑𝒊𝒏𝒆𝒔𝒔 𝒚𝒐𝒖 𝒅𝒆𝒔𝒆𝒓𝒗𝒆.
+        𝑲𝒆𝒆𝒑 𝒔𝒉𝒊𝒏𝒊𝒏𝒈, 𝒌𝒆𝒆𝒑 𝒔𝒎𝒊𝒍𝒊𝒏𝒈, 𝒂𝒏𝒅 𝒏𝒆𝒗𝒆𝒓 𝒔𝒕𝒐𝒑 𝒃𝒆𝒊𝒏𝒈 𝒕𝒉𝒆 𝒂𝒎𝒂𝒛𝒊𝒏𝒈 𝒑𝒆𝒓𝒔𝒐𝒏 𝒚𝒐𝒖 𝒂𝒓𝒆!
+        𝑾𝒊𝒔𝒉𝒊𝒏𝒈 𝒚𝒐𝒖 𝒕𝒉𝒆 𝒉𝒂𝒑𝒑𝒊𝒆𝒔𝒕 𝒃𝒊𝒓𝒕𝒉𝒅𝒂𝒚 𝒆𝒗𝒆𝒓, 𝒇𝒓𝒐𝒎 𝒂 𝒇𝒓𝒊𝒆𝒏𝒅 𝒘𝒉𝒐 𝒔𝒆𝒄𝒓𝒆𝒕𝒍𝒚 𝒕𝒉𝒊𝒏𝒌𝒔 𝒚𝒐𝒖'𝒓𝒆 𝒑𝒓𝒆𝒕𝒕𝒚 𝒂𝒎𝒂𝒛𝒊𝒏𝒈. </h1>
+
+        <h2>
+        - H unfiltered
+        </h2>
+    </div>
+  </div>
+  
+
+  <script src="script2.js"></script>
+</body>
+</html>
+
+
+
+
+
+
