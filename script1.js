@@ -16,7 +16,7 @@ function setupModal() {
             <div class="new-screen">
                 <div class="modal1">
                     <h2>Confirmation</h2>
-                    <p>Are you sure you want to continue?</p>
+                    <p>its very dark here?</p>
                     <div class="buttons">
                         <button class="button lightson">Lights On</button>
                     </div>
